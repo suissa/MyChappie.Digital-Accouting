@@ -322,6 +322,12 @@ Em conformidade com a especificação AllasCode de Governança de Agentes:
 
 ---
 
+## 11.1. Skills por Faixa Tributária
+
+As regras do *Tax Threshold & Bracket Forecaster* (§5) e do *Monophasic Optimizer* (§6) estão detalhadas por faixa em [`skills/`](skills/README.md): uma skill por faixa (MEI, Simples Faixas 1-6, Pós-Simples) com parâmetros, todos os cenários de subida/descida, melhor forma de economizar, como não atingir o teto e resumo — mais `faixa-navigator`, que identifica a faixa pelo RBT12 e concentra as regras comuns (janela deslizante, fórmula contínua, tolerância de 20 %, limite proporcional).
+
+---
+
 ## 12. Conclusão e Roadmap de Implementação
 
 O **HyperAccounting** reposiciona a contabilidade de pequenas empresas como um centro ativo de inteligência e preservação de lucros. Integrado ao ecossistema MyChappie.Digital, ele fecha o ciclo entre a compra no fornecedor, o gerenciamento de estoque, a venda na maquininha e a saúde patrimonial do comerciante, garantindo que o pequeno empresário tenha o mesmo nível de sofisticação fiscal e contábil das grandes corporações, diretamente na palma da mão.

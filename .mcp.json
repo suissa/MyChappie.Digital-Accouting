@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "hyperaccounting": {
+      "command": "node",
+      "args": ["./mcp/server.mjs"]
+    },
+    "duckduckgo": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "mcp/duckduckgo"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+module:
+  id: hyperaccounting
+  name: HyperAccounting
+  capabilities:
+    - accounting
+    - tax
+    - ledger
+    - reports
+  api:
+    status: library-only
+    evidence: src/index.ts
+
+mcp:
+  transports:
+    stdio:
+      enabled: true
+    rest:
+      enabled: true
+      host: 127.0.0.1
+      port: 7401
+    websocket:
+      enabled: true
+      host: 127.0.0.1
+      port: 7402
+    nats:
+      enabled: true
+      url: "nats://127.0.0.1:60001"
+      subject: hyperaccounting.rpc
+      queue: hyperaccounting
